@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 require('dotenv/config');
 
+const EmployeeRoute = require('./routes/employee');
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
